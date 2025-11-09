@@ -1,0 +1,147 @@
+html {
+  display: block;
+}
+
+html, body {
+  min-width: 290px;
+  background-color: rgba(245, 245, 220, 0.164);
+  font-family: Trebuchet MS, Verdana;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+body {
+  display: block;
+  margin: 8px;
+  padding-top: 5px;
+}
+
+nav {
+  display: block;
+}
+
+#navbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  min-width: 290px;
+  height: 100%;
+  background-color: white;
+  border-right: 2px solid grey;
+}
+
+main {
+  display: block;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 2rem;
+  overflow: auto;
+}
+
+#navbar header {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.75em 0;
+}
+
+#navbar ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.25rem;
+  border-top: 2px solid grey;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.664);
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  height: 30px;;
+}
+
+#navbar li:hover {
+  background-color: beige;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    max-height: 275px;
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    height: 75%;
+    overflow: auto;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-bottom: 2px solid grey;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  #main-doc {
+    margin-top: 280px;
+    margin-left: 0px;
+  }
+}
+
+
+
+
+
+#main-doc header {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: black;
+}
+
+#main-doc article {
+  padding-left: 1.25em;
+}
+
+code {
+  background-color: rgba(197, 194, 194, 0.656);
+  border-radius: 3px;
+  padding: 0 3px;
+  font-family: courier, monospace;
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#source a {
+  color: black;
+}
+
+#source a:visited {
+  color: grey;
+}

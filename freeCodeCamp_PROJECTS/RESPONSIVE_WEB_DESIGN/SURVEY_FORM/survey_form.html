@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>General Fitness Survey</title>
+      <link rel="stylesheet" href="survey_form_styles.css" /> 
+    </head>   
+    <body>
+      <h1 id="title">General Fitness Survey</h1>
+      <p id="description">Let us know about your fitness habits</p>
+      <form id="survey-form">
+        <div>
+          <label id="name-label">Name <input placeholder="Ronnie Coleman" id="name" type="text" class="blocky" required /></label>
+          <label id="email-label">Email <input placeholder="ron.cole@lw.us" id="email" type="email" class="blocky" required /></label>
+          <label id="number-label">Age <input placeholder="24" id="number" type="number" min="12" max="120" class="blocky" /></label>
+        </div>
+        <div>
+          <label><input class="inline" value="1" name="coach" type="radio" checked /> I have a coach </label>
+          <label><input class="inline" value="2" name="coach" type="radio" /> I don't have a coach </label>
+        </div>
+        <div>
+          <label>How many times do you workout per week?
+            <select id="dropdown">
+              <option>I don't workout</option>
+              <option>1-2 times</option>
+              <option>3-4 times</option>
+              <option>5-7 times</option>
+            </select>  
+          </label>
+        </div>
+        <div>
+          <label><input class="inline" type="checkbox" value="1" /> I only workout in a gym </label>
+          <label><input class="inline" type="checkbox" value="2" /> I only workout outdoors </label>
+          <label><input class="inline" type="checkbox" value="3" /> I workout in a gym and outdoors </label>
+          <label><input class="inline" type="checkbox" value="4" /> I workout at home </label>
+          <label><input class="inline" type="checkbox" value="5" /> I workout alone </label>
+          <label><input class="inline" type="checkbox" value="6" /> I workout with friends </label>
+        </div>
+        <div>
+          <textarea rows="3" cols="30" placeholder="Additional comments..."></textarea>
+          <input id="submit" type="submit" />
+        </div>  
+      </form>
+    </body>
+  </html>

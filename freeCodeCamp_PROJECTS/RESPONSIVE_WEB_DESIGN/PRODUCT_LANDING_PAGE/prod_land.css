@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  scroll-behavior: smooth;
+  background-color: rgba(0, 170, 255, 0.594);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  background-color: rgba(224, 103, 16, 0.854);
+  font-family: Helvetica, sans-serif;
+  position: sticky;
+  top: 0;
+}
+
+.header-logo {
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(270deg);
+  filter: drop-shadow(0 0 0.5rem rgba(76, 47, 18, 0.354));
+}
+
+.store-name {
+  width: 60%;
+  font-size: 40px;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 15px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px black;
+}
+
+#nav-bar {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  width:  40%;
+  font-size: 20px;
+}
+
+.nav-ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+li .nav-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.25s;
+}
+
+li .nav-link:hover {
+  text-shadow: 1px 1px 2px black;
+}
+
+li .nav-link:active {
+  color: rgba(255, 255, 255, 0.788);
+}
+
+@media only screen and (max-width: 680px) {
+  header {
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .store-name {
+    padding: 0;
+    text-align: center;
+  }
+  #header-img {
+    height: 60px;
+    width: 60px;
+  }
+  #nav-bar {
+    height: 40%;
+    position: relative;
+    margin-top: 10px;
+  }
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+/*  MAIN STYLING -- anything below header   */ 
+
+
+#email-form {
+  max-height: 410px;
+  height: 600px;
+  width: 100%;
+}
+
+#form {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+#form h3 {
+  box-sizing: border-box;
+  height: 50%;
+  max-height: 50%;
+  display: block;
+  text-align: center;
+  padding-top: 115px;
+  font-size: 22px;
+  font-family: Verdana, Trebuchet MS;
+  padding-bottom: 1px;
+  color: rgba(236, 103, 9, 0.815);
+  text-shadow: rgb(255, 162, 1) 0px 0px 39px;
+}
+
+
+.input {
+  height:50%;
+  max-height: 50%;
+  padding-top: 5px;
+}
+
+#email {
+  box-sizing: border-box;
+  display: block;
+  margin: 10px auto;
+  height: 3rem;
+  width: 15rem;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(236, 103, 9, 0.815);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+#submit {
+  display: block;
+  margin: 20px auto;
+  background-color: rgba(236, 103, 9, 0.815);
+  height: 2rem;
+  width: 8rem;
+  font-family: Verdana, Trebuchet MS;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+#submit:hover {
+  cursor: pointer;
+  box-shadow: rgba(236, 103, 9, 0.815) 0px 0px 15px;
+}
+
+#submit:active {
+  background-color: rgba(236, 103, 9, 1);;
+}
+
+
+
+#adverts {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#adverts div {
+  height: 34%;
+  display: flex;
+  width: 80%;
+  min-width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(236, 103, 9, 0.815)
+}
+
+#adverts h2 {
+  font-size: 2rem;
+}
+
+#adverts i {
+  margin-right: 20px;
+}
+
+#adverts p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+#demo-vid {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-wrapper {
+  height: 315px;
+  width: 480px;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  display: block;
+}
+
+#pricing {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pricing {
+  width: 25%;
+  min-width: 200px;
+  max-width: 250px;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: rgb(224, 103, 16) 0px 0px 20px;
+}
+
+.product {
+  background-color: rgb(224, 103, 16);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.price {
+  padding: 10px;
+  text-align: center;
+  color: rgb(224, 103, 16);
+  font-size: 2rem;
+  border-bottom: 2px solid white;
+  border-radius: 2px;
+}
+
+.description {
+  color: rgb(224, 103, 16);
+  font-size: 1.5rem;
+  padding-top: 30px;
+  text-align: center;
+  min-height: 150px;
+}
+
+.pricing button {
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(236, 103, 9, 0.815);
+  height: 2rem;
+  width: 6rem;
+  font-family: Verdana, Trebuchet MS;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.pricing button:hover {
+  cursor: pointer;
+  box-shadow: rgba(236, 103, 9, 0.815) 0px 0px 15px;
+}
+
+.pricing button:active {
+  background-color: rgba(236, 103, 9, 1);;
+}
+
+@media only screen and (max-width: 680px) {
+  #pricing {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+}
+
+#footer {
+  height: 80px;
+  width: 85%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: rgba(224, 103, 16, 0.854);
+}
+
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  max-height: 20px;
+  list-style: none;
+  text-decoration: none;
+  margin: 1px;
+  font-size: 1rem;
+}
+
+.footer-list a {
+  color: black;
+  text-decoration: none;
+  margin: 1px;
+  padding-left: 5px;
+}
+
+
+footer span {
+  display: flex; 
+  justify-content: flex-end;
+  color: rgb(222, 222, 222);
+}
